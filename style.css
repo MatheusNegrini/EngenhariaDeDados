@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(27, 27, 27);
+    max-width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+header{
+    left: 0;
+    top: 0;
+    background-color: rgb(19, 19, 19);
+    width: 100vw;
+    height: 100px;
+}
+
+.top{
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.wrapper{
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 130px;
+}
+
+.square,
+.triangle,
+.circle{
+    background-color: bisque;
+    width: 25%;
+    height: 60%;
+    text-align: center;
+    border-radius: 15px;
+    transition: scale 0.5s ease;
+    cursor: pointer;
+}
+
+.square:hover,
+.triangle:hover,
+.circle:hover{
+    scale: 1.08;
+}
+
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.hiddenCalculate{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.showCalculate{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.lineContainer{
+    position: relative;
+    width: fit-content;
+}
+
+.inputs{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.inputs:focus {
+    outline: none;
+}
+
+.line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 1s ease;
+}
+
+.inputs:focus + .line{
+    width: 100%;
+}

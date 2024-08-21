@@ -1,11 +1,11 @@
 const square = document.querySelector(".square")
 const wrapper = document.querySelector(".wrapper")
-const teste = document.querySelector(".hiddenCalculate")
+const teste = document.querySelector(".hiddenCalculateSquare")
 
 console.log(teste)
 
-function calculateLayout(){
+function calculateLayoutSquare(){
     wrapper.classList.add("hidden")
-    teste.classList.add("showCalculate")
-    teste.classList.remove("hiddenCalculate")
+    teste.classList.add("showCalculateSquare")
+    teste.classList.remove("hiddenCalculateSquare")
 }

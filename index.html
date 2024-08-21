@@ -20,18 +20,32 @@
 
         <main>
             <div class="wrapper">
-                <div class="square" onclick="calculateLayout()">Quadrado</div>
+                <div class="square" onclick="calculateLayoutSquare()">Quadrado</div>
                 <div class="triangle" onclick="calculateLayout()">Triângulo</div>
                 <div class="circle" onclick="calculateLayout()">Círculo</div>
             </div>
-            <div class="hiddenCalculate">
+            <div class="hiddenCalculateSquare">
                 <div class="numberField">
                     <div class="lineContainer"><input class="inputs" placeholder="Digite a base"></input><span class="line"></span></div>
                     <div class="lineContainer"><input class="inputs" placeholder="Digite a altura"></input><span class="line"></span></div>
+                    <button><div class="animateButton"></div>Calcular</button>
                 </div>
+                <div class="resultSquare">
+                    <div class="wrapperResult">
+                        <p class="heightSquare">Altura:</p>
+                        <img src="./assets/square.png" alt="Imagem Quadrado">
+                    </div>
+                    <div class="child2">
+                        <p class="baseSquare">Base:</p>
+                    </div>
+                </div>
+                <div class="result">
+                    <p>Resultado:</p><P class="areaSquare"></P>
+                </div>
+                <button class="backToMenu"><div class="animateButtonBack"></div><img src="assets/arrowBack.svg" alt="">Voltar</button>
             </div>
         </main>
     </div>
-    <script src="./javascript/script.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

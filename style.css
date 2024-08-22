@@ -87,7 +87,8 @@ header{
     width: fit-content;
 }
 
-.inputs{
+.inputBase,
+.inputAltura{
     border: none;
     background-color: transparent;
     border-bottom: 1px solid rgba(255, 255, 255, 0.247);
@@ -96,7 +97,8 @@ header{
     font-size: 16px;
 }
 
-.inputs:focus {
+.inputBase:focus,
+.inputAltura:focus {
     outline: none;
 }
 
@@ -110,7 +112,8 @@ header{
     transition: width 0.7s ease;
 }
 
-.inputs:focus + .line{
+.inputBase:focus + .line,
+.inputAltura:focus + .line{
     width: 100%;
 }
 
@@ -135,7 +138,7 @@ header{
 
 .animateButton{
     position: absolute;
-    background-color: rgb(20, 10, 54);
+    background-color: rgb(84, 128, 224);
     width: 0;
     height: 100%;
     border-radius: 25px;
@@ -209,13 +212,13 @@ header{
 
 .animateButtonBack{
     position: absolute;
-    background-color: rgb(20, 10, 54);
+    background-color: rgb(84, 128, 224);
     width: 0;
     height: 100%;
     border-radius: 13px;
     left: 0;
     top: 0;
-    transition: width 0.5s ease;
+    transition: all 0.5s ease;
     z-index: -1;
     
 }
@@ -227,3 +230,4 @@ header{
 .backToMenu:hover .animateButtonBack{
     width: 100%;
 }
+

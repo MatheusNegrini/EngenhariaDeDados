@@ -26,9 +26,9 @@
             </div>
             <div class="hiddenCalculateSquare">
                 <div class="numberField">
-                    <div class="lineContainer"><input class="inputs" placeholder="Digite a base"></input><span class="line"></span></div>
-                    <div class="lineContainer"><input class="inputs" placeholder="Digite a altura"></input><span class="line"></span></div>
-                    <button><div class="animateButton"></div>Calcular</button>
+                    <div class="lineContainer"><input class="inputBase" placeholder="Digite a base"></input><span class="line"></span></div>
+                    <div class="lineContainer"><input class="inputAltura" placeholder="Digite a altura"></input><span class="line"></span></div>
+                    <button onclick="calcSquare()"><div class="animateButton" ></div>Calcular</button>
                 </div>
                 <div class="resultSquare">
                     <div class="wrapperResult">
@@ -42,7 +42,7 @@
                 <div class="result">
                     <p>Resultado:</p><P class="areaSquare"></P>
                 </div>
-                <button class="backToMenu"><div class="animateButtonBack"></div><img src="assets/arrowBack.svg" alt="">Voltar</button>
+                <button class="backToMenu" onclick="mainLayout()"><div class="animateButtonBack"></div><img src="assets/arrowBack.svg" alt="">Voltar</button>
             </div>
         </main>
     </div>

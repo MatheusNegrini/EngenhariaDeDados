@@ -22,7 +22,7 @@
             <div class="wrapper">
                 <div class="square" onclick="calculateLayoutSquare()">Quadrado</div>
                 <div class="triangle" onclick="calculateLayout()">Triângulo</div>
-                <div class="circle" onclick="calculateLayout()">Círculo</div>
+                <div class="circle" onclick="calculateLayoutCircle()">Círculo</div>
             </div>
             <div class="hiddenCalculateSquare">
                 <div class="numberField">
@@ -46,6 +46,24 @@
             </div>
         </main>
     </div>
+    <div class="hiddenCalculateCircle">
+        <div class="numberField">
+            <div class="lineContainer"><input class="inputRaio" placeholder="Digite o raio"></input><span class="line"></span></div>
+            <button onclick="calcCircle()"><div class="animateButton"></div>Calcular</button>
+        </div>
+        <div class="resultCircle">
+            <div class="wrapperResult">
+                <p class="radiusCircle">Raio:</p>
+                <img src="./assets/circle.png" alt="Imagem Círculo">
+            </div>
+        </div>
+        <div class="result">
+            <p>Resultado:</p><P class="areaCircle"></P>
+        </div>
+        <button class="backToMenu" onclick="mainLayout()"><div class="animateButtonBack"></div><img src="assets/arrowBack.svg" alt="">Voltar</button>
+    </div>
+    
     <script src="./main.js"></script>
+    <script src="./circulo.js"></script>
 </body>
 </html>
